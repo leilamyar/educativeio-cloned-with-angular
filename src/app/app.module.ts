@@ -13,6 +13,8 @@ import { FooterComponent } from './views/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { ExploreComponent } from './views/explore/explore.component';
 import { CardsListGalleryComponent } from './shared/cards-list-gallery/cards-list-gallery.component';
+import { BrowseAllComponent } from './views/browse-all/browse-all.component';
+import { CardComponent } from './shared/card/card.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { CardsListGalleryComponent } from './shared/cards-list-gallery/cards-lis
     HeaderComponent,
     ExploreComponent,
     CardsListGalleryComponent,
+    BrowseAllComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,

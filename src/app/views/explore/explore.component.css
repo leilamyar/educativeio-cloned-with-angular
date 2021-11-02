@@ -1,0 +1,11 @@
+nav {
+  position: sticky;
+}
+
+.shadow {
+  box-shadow: 0 8px 10px -8px #ccc;
+}
+
+ul {
+  display: flex;
+}
