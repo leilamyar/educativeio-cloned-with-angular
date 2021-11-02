@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CardsListGalleryComponent } from './shared/cards-list-gallery/cards-list-gallery.component';
 import { ExploreComponent } from './views/explore/explore.component';
 import { HomeComponent } from './views/home/home.component';
 import { JoinComponent } from './views/join/join.component';
@@ -9,10 +10,14 @@ import { PricingComponent } from './views/pricing/pricing.component';
 
 const routes: Routes = [
   { path: "home", component: HomeComponent, children: [
-    { path: 'explore', component: ExploreComponent },
+    { path: 'explore', component: ExploreComponent, children: [
+      { path: 'browse-all', component: CardsListGalleryComponent },
+      { path: 'new', component: CardsListGalleryComponent }
+    ]},
   ]},
   // { path: "explore", component: ExploreComponent },
   // { path: "business", component: HomeComponent },
+  // { path: "new", component: CardsListGalleryComponent },
   { path: "pricing", component: PricingComponent },
   { path: "login", component: LoginComponent },
   { path: "join", component: JoinComponent },

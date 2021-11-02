@@ -12,6 +12,7 @@ import { PageNotFoundComponent } from './views/page-not-found/page-not-found.com
 import { FooterComponent } from './views/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { ExploreComponent } from './views/explore/explore.component';
+import { CardsListGalleryComponent } from './shared/cards-list-gallery/cards-list-gallery.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ExploreComponent } from './views/explore/explore.component';
     FooterComponent,
     HeaderComponent,
     ExploreComponent,
+    CardsListGalleryComponent,
   ],
   imports: [
     BrowserModule,
