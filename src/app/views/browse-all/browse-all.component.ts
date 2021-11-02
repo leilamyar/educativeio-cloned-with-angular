@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GalleryType } from 'src/app/domain/GalleryType';
 
 @Component({
   selector: 'app-browse-all',
@@ -7,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BrowseAllComponent implements OnInit {
 
+  galleryType = GalleryType;
+  
   constructor() { }
 
   ngOnInit(): void {

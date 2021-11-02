@@ -1,1 +1,8 @@
-<p>cards-list-gallery works!</p>
+<ng-container [ngSwitch]="galleryType">
+  <div *ngSwitchCase="eGalleryType.COURSE_GALLERY">
+    I AM COURSE gallery
+  </div>
+  <div *ngSwitchCase="eGalleryType.PATH_GALLERY">
+    I AM PATH gallery
+  </div>
+</ng-container>
