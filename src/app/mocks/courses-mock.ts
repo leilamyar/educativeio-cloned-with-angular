@@ -1,4 +1,4 @@
-import { Course } from "../domain/courses-mock";
+import { Course } from "../domain/Course";
 
 export const COURSES: Course[] = [
   { id: 1, title: "Course number One", chapters: [ "Course One Introduction", "Course One, Chap 1", "Course One Conclusion"] },
