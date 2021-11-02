@@ -1,0 +1,15 @@
+.card {
+  background-color: black;
+  color: aliceblue;
+  width: 310px;
+  border-radius: .25rem;
+  margin: auto;
+  padding: 8px;
+}
+
+.card-img {
+  width: calc(310 - (2*8));
+  padding-bottom: 8px;
+  height: 18ch;
+  background-color: aqua;
+}
