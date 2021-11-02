@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'educativeio-cloned-with-angular';
+
+  doSmth(): void {
+    console.log('Did smth!');
+  }
 }
