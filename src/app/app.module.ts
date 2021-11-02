@@ -9,6 +9,9 @@ import { PricingComponent } from './views/pricing/pricing.component';
 import { LoginComponent } from './views/login/login.component';
 import { JoinComponent } from './views/join/join.component';
 import { PageNotFoundComponent } from './views/page-not-found/page-not-found.component';
+import { FooterComponent } from './views/footer/footer.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { ExploreComponent } from './views/explore/explore.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { PageNotFoundComponent } from './views/page-not-found/page-not-found.com
     PricingComponent,
     LoginComponent,
     JoinComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    FooterComponent,
+    HeaderComponent,
+    ExploreComponent,
   ],
   imports: [
     BrowserModule,

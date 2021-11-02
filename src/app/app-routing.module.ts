@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ExploreComponent } from './views/explore/explore.component';
 import { HomeComponent } from './views/home/home.component';
 import { JoinComponent } from './views/join/join.component';
 import { LoginComponent } from './views/login/login.component';
@@ -7,7 +8,10 @@ import { PageNotFoundComponent } from './views/page-not-found/page-not-found.com
 import { PricingComponent } from './views/pricing/pricing.component';
 
 const routes: Routes = [
-  { path: "home", component: HomeComponent },
+  { path: "home", component: HomeComponent, children: [
+    { path: 'explore', component: ExploreComponent },
+  ]},
+  // { path: "explore", component: ExploreComponent },
   // { path: "business", component: HomeComponent },
   { path: "pricing", component: PricingComponent },
   { path: "login", component: LoginComponent },

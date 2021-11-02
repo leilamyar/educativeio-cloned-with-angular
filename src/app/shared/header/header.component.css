@@ -1,0 +1,16 @@
+#logo {
+  display: inline-block;
+  height: 30px;
+}
+
+nav {
+  background-color: blueviolet;
+}
+
+/* TODO: style nav menu items properly */
+ul {
+  display: flex;
+}
+li {
+  margin-right: auto;
+}

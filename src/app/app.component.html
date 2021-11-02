@@ -1,6 +1,12 @@
-<p>App Comp works !</p>
-<app-button
+<!-- <app-button
   text="My Reusable Btn example usage"
-  (click)="doSmth()"></app-button>
+  (click)="doSmth()"></app-button> -->
   <!-- <button (click)="lazyLoadHeader()">Load header</button> -->
   <!-- <ng-container #header></ng-container> -->
+<ng-container>
+  <app-header></app-header>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+  <app-footer></app-footer>
+</ng-container>
