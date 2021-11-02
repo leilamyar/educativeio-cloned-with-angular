@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component,
+  // ComponentFactoryResolver, ViewChild, ViewContainerRef,
+} from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
@@ -11,4 +14,14 @@ export class AppComponent {
   doSmth(): void {
     console.log('Did smth!');
   }
+
+  // @ViewChild('header', { read: ViewContainerRef }) headerContainer: ViewContainerRef | null = null;
+  // constructor(private factoryResolver: ComponentFactoryResolver) { }
+
+
+  // async lazyLoadHeader() {
+  //   const { HeaderComponent } = await import('./header/header.component');
+  //   const factory = this.factoryResolver.resolveComponentFactory(HeaderComponent);
+  //   this.headerContainer?.createComponent(factory);
+  // }
 }
