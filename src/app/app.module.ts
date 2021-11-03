@@ -17,6 +17,7 @@ import { BrowseAllComponent } from './views/browse-all/browse-all.component';
 import { CardComponent } from './shared/card/card.component';
 import { PathOverviewComponent } from './views/path-overview/path-overview.component';
 import { CourseOverviewComponent } from './views/course-overview/course-overview.component';
+import { CoursePanelComponent } from './views/course-panel/course-panel.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { CourseOverviewComponent } from './views/course-overview/course-overview
     CardComponent,
     PathOverviewComponent,
     CourseOverviewComponent,
+    CoursePanelComponent,
   ],
   imports: [
     BrowserModule,

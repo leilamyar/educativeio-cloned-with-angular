@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CardsListGalleryComponent } from './shared/cards-list-gallery/cards-list-gallery.component';
 import { BrowseAllComponent } from './views/browse-all/browse-all.component';
 import { CourseOverviewComponent } from './views/course-overview/course-overview.component';
+import { CoursePanelComponent } from './views/course-panel/course-panel.component';
 import { ExploreComponent } from './views/explore/explore.component';
 import { HomeComponent } from './views/home/home.component';
 import { JoinComponent } from './views/join/join.component';
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: "pricing", component: PricingComponent },
   { path: "login", component: LoginComponent },
   { path: "join", component: JoinComponent },
+  { path: 'course', component: CoursePanelComponent },
   { path: 'path/:id', component: PathOverviewComponent },
   { path: 'course/:id', component: CourseOverviewComponent },
   { path: "", redirectTo: "", pathMatch: "full", component: HomeComponent },
