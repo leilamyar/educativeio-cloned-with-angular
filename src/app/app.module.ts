@@ -15,6 +15,8 @@ import { ExploreComponent } from './views/explore/explore.component';
 import { CardsListGalleryComponent } from './shared/cards-list-gallery/cards-list-gallery.component';
 import { BrowseAllComponent } from './views/browse-all/browse-all.component';
 import { CardComponent } from './shared/card/card.component';
+import { PathOverviewComponent } from './views/path-overview/path-overview.component';
+import { CourseOverviewComponent } from './views/course-overview/course-overview.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import { CardComponent } from './shared/card/card.component';
     CardsListGalleryComponent,
     BrowseAllComponent,
     CardComponent,
+    PathOverviewComponent,
+    CourseOverviewComponent,
   ],
   imports: [
     BrowserModule,

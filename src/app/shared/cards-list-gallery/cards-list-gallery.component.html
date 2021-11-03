@@ -3,6 +3,7 @@
   <section 
       class="gallery" 
       *ngFor="let course of courses$ | async">
+      <!-- TODO: rm replace props with "data" -->
       <app-card [course]=course></app-card>
   </section>
 </ng-container>

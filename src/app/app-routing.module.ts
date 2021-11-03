@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CardsListGalleryComponent } from './shared/cards-list-gallery/cards-list-gallery.component';
 import { BrowseAllComponent } from './views/browse-all/browse-all.component';
+import { CourseOverviewComponent } from './views/course-overview/course-overview.component';
 import { ExploreComponent } from './views/explore/explore.component';
 import { HomeComponent } from './views/home/home.component';
 import { JoinComponent } from './views/join/join.component';
 import { LoginComponent } from './views/login/login.component';
 import { PageNotFoundComponent } from './views/page-not-found/page-not-found.component';
+import { PathOverviewComponent } from './views/path-overview/path-overview.component';
 import { PricingComponent } from './views/pricing/pricing.component';
 
 const routes: Routes = [
@@ -21,6 +23,8 @@ const routes: Routes = [
   { path: "pricing", component: PricingComponent },
   { path: "login", component: LoginComponent },
   { path: "join", component: JoinComponent },
+  { path: 'path/:id', component: PathOverviewComponent },
+  { path: 'course/:id', component: CourseOverviewComponent },
   { path: "", redirectTo: "", pathMatch: "full", component: HomeComponent },
   { path: "**", component: PageNotFoundComponent },
 ];
