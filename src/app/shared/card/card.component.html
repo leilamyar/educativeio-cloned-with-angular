@@ -1,11 +1,23 @@
-<div class="card">
+<div class="card"
+  *ngIf="data">
   <div class="card-img">&nbsp;</div>
-  <p class="card-title">Course Title</p>
-  <p class="card-descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aliquam excepturi eos, quia similique doloremque.</p>
-  <!-- TODO: add switch or smth to change // PATH or COURSE -->
-  <p>6 Modules</p>
-  <!-- <p>Intermediate</p> -->
+  <p class="card-title">{{ data.title }}</p>
+  <p class="card-descr">{{ data.description }}</p>
+
+  <ng-container *ngIf="type === 'course' && course">
+    <p> {{ course.level }} </p>
+  </ng-container>
+  <ng-container *ngIf="type === 'path' && path">
+    <p> {{ path.modules.length }} Modules </p>
+  </ng-container>
+  <!-- <ng-container [ngSwitch]="type">
+    <p *ngSwitchCase="course"> {{ data.level }} </p>
+    <p *ngSwitchCase="path"> {{ data.modules.length }} Modules </p>
+  </ng-container> -->
+
   <app-button
     text="Preview"
     (click)="doSmth()"></app-button>
 </div>
+<!-- NEVER type in TS : https://javascript.plainenglish.io/never-miss-a-switch-case-with-typescript-684bf5d0e1d1 :
+"thanks to the never type, we can explain to the compiler that we should never ever end up in the default case of our switch statement."-->

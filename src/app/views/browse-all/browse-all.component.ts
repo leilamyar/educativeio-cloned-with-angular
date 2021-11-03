@@ -8,8 +8,6 @@ import { GalleryType } from 'src/app/domain/GalleryType';
 })
 export class BrowseAllComponent implements OnInit {
 
-  galleryType = GalleryType;
-  
   constructor() { }
 
   ngOnInit(): void {
@@ -20,7 +18,6 @@ export class BrowseAllComponent implements OnInit {
   }
   loadMoreCourses(): void {
     console.log('Browse All: Loaded more courses!');
-    
   }
 
 }

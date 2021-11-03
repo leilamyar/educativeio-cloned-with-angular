@@ -1,13 +1,19 @@
 <app-button
   text="Python"
   (click)="filterList('python')"></app-button>
+
 <h2>Learning Paths</h2>
+
+<!-- PATHS gallery -->
 <p>Show All Paths</p>
 <app-cards-list-gallery
 galleryType="course"></app-cards-list-gallery>
+
+<!-- COURSES gallery -->
 <h2>All Courses</h2>
 <app-cards-list-gallery
-galleryType="path"></app-cards-list-gallery>
+  galleryType="path"></app-cards-list-gallery>
+
 <app-button
   text="Show More"
   (click)="loadMoreCourses()"></app-button>

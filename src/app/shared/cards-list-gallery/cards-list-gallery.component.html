@@ -1,8 +1,17 @@
-<ng-container [ngSwitch]="galleryType">
-  <div *ngSwitchCase="eGalleryType.COURSE_GALLERY">
-    <app-card></app-card>
-  </div>
-  <div *ngSwitchCase="eGalleryType.PATH_GALLERY">
-    I AM PATH gallery
-  </div>
+<!-- Display COURSEs -->
+<ng-container *ngIf="galleryType == courseType">
+  <section 
+      class="gallery" 
+      *ngFor="let course of courses$ | async">
+      <app-card [course]=course></app-card>
+  </section>
+</ng-container>
+
+  <!-- Display PATHS -->
+<ng-container *ngIf="galleryType == pathType">
+  <section 
+      class="gallery" 
+      *ngFor="let path of paths$ | async">
+    <app-card [path]=path></app-card>
+  </section>
 </ng-container>
